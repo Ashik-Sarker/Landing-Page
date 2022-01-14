@@ -3,10 +3,54 @@
 body{
     background: #F3F1FF;
     font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
 }
+.option{
+    height: 100px;
+    width: 930px;
+    margin: auto;
+    background-color: #562EFF;
+    display: flex;
+    justify-content: space-between;
+}
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 20px;
+    align-items: center;
+}
+.menu-name{
+    margin: 15px 30px;
+}
+.menu-name a{
+    text-decoration: none;
+    padding: 5px 20px;
+    margin-right: 10px;
+    color: white;
+    border: 1px solid rgb(128, 128, 221);
+    border-radius: 20px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    margin-left:16px;
+}
+.text{
+    color: whitesmoke;
+}
+.image a img{
+    width: 41px;
+    height: 51px;
+}
+
+
+/*-------------
+ main section 
+---------------*/
+
 main{
     display: flex;
-    /* justify-content: center; */
     flex-direction: column;
     align-items: center;
 }

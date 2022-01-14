@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            margin: 20px;
+        }
+        .photo-frame{
+            width: 300px;
+            height: 200px;
+            border: 2px solid;
+            /* position: relative; */
+            overflow: hidden;
+        }
+        .photo-frame .photo img{
+            width: 100%;
+        }
+        .photo-description{
+            position: absolute;
+            width: 300px;
+            top: -110px;
+            padding: 10px;
+            background-color: rgba(218, 221, 218, 0.479);
+            /* display: none; */
+            transition: .5s ease-out;
+        }
+        .photo-frame:hover .photo-description{
+            /* display: block; */
+            top: 126px;
+        }
+        .photo-frame:hover .image{
+            transform: scale(1.5) translateY(30px);
+            transition: transform 1s ease-out;
+        }
+        .photo-album{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 50px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h3>Tiger mama</h3>
+        <div class="photo-album">
+            <div class="photo-frame">
+                <div class="photo">
+                    <img class="image" src="tiger.jpg" alt="">
+                    <div class="photo-description">
+                        <h3>Tiger mama</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sit tempora deserunt iure similique provident expedita aliquid vitae nihil exercitationem.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img class="image" src="tiger.jpg" alt="">
+                    <div class="photo-description">
+                        <h3>Tiger mama</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sit tempora deserunt iure similique provident expedita aliquid vitae nihil exercitationem.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img class="image" src="tiger.jpg" alt="">
+                    <div class="photo-description">
+                        <h3>Tiger mama</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sit tempora deserunt iure similique provident expedita aliquid vitae nihil exercitationem.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
